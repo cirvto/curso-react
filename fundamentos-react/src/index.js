@@ -1,4 +1,5 @@
-import Reacto from 'react'
+import './index.css'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
 const el = document.getElementById('root')
