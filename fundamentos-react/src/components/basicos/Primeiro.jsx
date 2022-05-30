@@ -8,5 +8,5 @@ export default function Primeiro() {
             <p>{ msg }</p>
         </div>
     )
-    
+
 }
