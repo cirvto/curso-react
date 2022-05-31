@@ -5,7 +5,7 @@ export default function Primeiro() {
     return (
         <div>
             <h2>Olá, React! Esse é meu primeiro componente.</h2>
-            <p>{ msg }</p>
+            <p>{msg}</p>
         </div>
     )
 }
