@@ -1,13 +1,14 @@
 import React from 'react'
 
-import Primeiro from './components/basicos/Primeiro'
-import ComParametro from './components/basicos/ComParametro'
-import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
+import Fragmento from './components/basicos/Fragmento'
+import ComParametro from './components/basicos/ComParametro'
+import Primeiro from './components/basicos/Primeiro'
 
 export default _ =>
     <div id='app'>
         <h1>Fundamentos React</h1>
+        <Aleatorio min={1} max={60}/>
         <Fragmento />
         <ComParametro
             titulo='Produtos TECH por menos de R$50,00'
@@ -15,5 +16,4 @@ export default _ =>
             p2='Mouse Sem Fio'
             p3='Mousepad Minimalista' />
         <Primeiro />
-        <Aleatorio min={1} max={10}/>
     </div>
