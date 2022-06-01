@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import Card from './components/layout/Card'
 
+import ListaDeAlunos from './components/repeticao/ListaDeAlunos'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import Aleatorio from './components/basicos/Aleatorio'
@@ -13,27 +14,30 @@ export default _ =>
     <div className='App'>
         <h1>Fundamentos React</h1>
         <div className='Cards'>
-            <Card titulo='Componente com Filhos' color='#FFC100'>
+            <Card titulo='#06 Repetição' color='#DFC100'>
+                <ListaDeAlunos />
+            </Card>
+            <Card titulo='#05 Componente com Filhos' color='#FFC100'>
                 <Familia sobrenome='Silva'>
                     <FamiliaMembro nome='João'/>
                     <FamiliaMembro nome='José'/>
                     <FamiliaMembro nome='Maria'/>
                 </Familia>
             </Card>
-            <Card titulo='Desafio Aleatório' color='#FFC233'>
+            <Card titulo='#04 Desafio Aleatório' color='#FFC233'>
                 <Aleatorio min={1} max={60}/>
             </Card>
-            <Card titulo='Fragmento' color='#EFBA3D'>
+            <Card titulo='#03 Fragmento' color='#EFBA3D'>
                 <Fragmento />
             </Card>
-            <Card titulo='Com Parâmetro' color='#DFB146'>
+            <Card titulo='#02 Com Parâmetro' color='#DFB146'>
             <ComParametro
                 titulo='Produtos TECH por menos de R$50,00'
                 p1='Light Bar Monitor'
                 p2='Mouse Sem Fio'
                 p3='Mousepad Minimalista' />
             </Card>
-            <Card titulo='Primeiro Componente' color='#CFA950'>
+            <Card titulo='#01 Primeiro Componente' color='#CFA950'>
                 <Primeiro />
             </Card>
         </div>
