@@ -1,0 +1,11 @@
+.TabelaProdutos thead{
+    background-color: #CB9618;
+}
+
+.TabelaProdutos .Par {
+    background-color: #ddd;
+}
+
+.TabelaProdutos .Impar {
+    background-color: #ccc;
+}
