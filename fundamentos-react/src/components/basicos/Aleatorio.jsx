@@ -11,5 +11,4 @@ export default (props) => {
         <p>Número aleatório: {random}</p>
         </>
     )
-        
 }

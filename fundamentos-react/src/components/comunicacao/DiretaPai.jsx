@@ -5,7 +5,7 @@ export default props => {
     return (
         <div>
             <DiretaFilho nome='Victor' idade={20} carro={false}></DiretaFilho>
-            <DiretaFilho nome='Thiago' idade={20} carro={false} />
+            <DiretaFilho nome='Thiago' idade={19} carro={false} />
         </div>
     )
 }
