@@ -1,16 +1,15 @@
-function gerarNumeroNaoContido(min, max, array) {
+function gerarNumAleatorio(min, max, array) {
     const numAleatorio = Math.floor(Math.random() * (max + 1 - min)) + min
-    return array.includes(numAleatorio) ? gerarNumeroNaoContido(min, max, array) : numAleatorio
+    return array.includes(numAleatorio) ? gerarNumAleatorio(min, max, array) : numAleatorio
 }
 
-function gerarNumeros(qtde) {
-    const numeros = Array(qtde).fill(0).reduce((nums) => {
-        const novoNumero = gerarNumeroNaoContido(1, 60, nums)
-        // console.log([...nums, novoNumero])
+function gerarArray(qtt) {
+    const arr = Array(qtt).fill(0).reduce((nums) => {
+        const novoNumero = gerarNumAleatorio(1, 60, nums)
         return [...nums, novoNumero ]
     }, []).sort((n1, n2) => n1 - n2)
 
-    return numeros
+    return arr
 }
 
 console.log(gerarNumeros(7))
